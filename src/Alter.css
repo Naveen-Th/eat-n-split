@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.app {
+    min-height: 66vh;
+    display: grid;
+    grid-template-columns: 34rem 44rem;
+    column-gap: 4rem;
+    align-items: start;
+}
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .sidebar li {
+    display: grid;
+    grid-template-columns: 4.8rem 1fr auto;
+    align-items: center;
+    column-gap: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 7px;
+    transition: 0.5s;
+  }
+  .sidebar li .button {
+    grid-row: span 2;
+    grid-column: 3;
+  }   
+  .sidebar  .button {
+    float: inline-end;
+  }
+  .sidebar li img {
+    border-radius: 50%;
+    width: 100%;
+    grid-row: span 2;
+  }
+  
+  .sidebar li h3 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  
+  .sidebar li p {
+    grid-row: 2;
+    grid-column: 2;
+  }  
+.button {
+    background-color: #ffa94d;
+    color: #343a40;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+  .button:hover {
+    background-color: #d67104;
+  }
+.add-frd{
+  margin: 20px 0px 8px 0px;
+    border-radius: 15px;
+    background: rgb(255, 235, 197);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 10rem;
+    animation: all 0.4s ease-in alternate ;
+}
+@keyframes all {
+  0%{transform: translateY(-15%);}
+  50%{transform: translateY(0%);}
+  100%{transform: translateY(0%);}
+}
+.add-frd input,select{
+  background: rgb(255, 255, 255);
+}
+.add-frd .button{
+    margin-top: 20px;
+    grid-column:2;
+    grid-row:10;
+}
+.form-split-bill{
+    padding: 60px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.020);
+    animation: al 0.4s ease-in alternate ;
+    transform: all 0.5s;
+}
+@keyframes al {
+  0%{transform: translateX(-15%);}
+  50%{transform: translateX(3%);}
+  100%{transform: translateX(0%);}
+}
+.form-split-bill div{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 10rem;
+}
+.form-split-bill .button {
+  margin: 5px;
+}
+ label{
+    line-height: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+ input,select{
+    border-radius: 5px;
+    background: rgb(255, 238, 221);
+    outline: none;
+    border: none;
+    height: 30px;
+    padding: 5px;
+    margin-top: 20px;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+
